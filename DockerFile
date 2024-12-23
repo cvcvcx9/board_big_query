@@ -1,0 +1,6 @@
+# 1. 최종 실행에 사용할 OpenJDK 기반 이미지
+FROM openjdk:17-jdk-slim
+# 2. 빌드된 JAR 파일을 Docker 이미지로 복사
+COPY build/libs/myapp.jar /myapp.jar
+# 3. 애플리케이션 실행
+ENTRYPOINT ["java", "-jar", "/myapp.jar"]
