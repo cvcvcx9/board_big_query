@@ -13,7 +13,7 @@ public class HomeController {
 
     @GetMapping("")
     public String hello(){
-        log.info("tes");
+        log.info("testt");
         return "hello";
     }
 
