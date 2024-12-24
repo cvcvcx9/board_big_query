@@ -8,7 +8,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 public class securityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.
+        http
             .csrf().disable()
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/").permitAll()
